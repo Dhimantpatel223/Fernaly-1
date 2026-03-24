@@ -1,0 +1,22 @@
+{
+  "name": "fernaly",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@netlify/plugin-nextjs": "^5.15.9",
+    "next": "latest",
+    "nodemailer": "^8.0.3",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "eslint": "^9",
+    "eslint-config-next": "15.0.0"
+  }
+}
