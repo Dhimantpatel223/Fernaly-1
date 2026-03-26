@@ -2,6 +2,7 @@
 'use client';
 
 import Link from 'next/link';
+import RandomLeafParallax from '@/components/RandomLeafParallax';
 import { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
@@ -74,7 +75,8 @@ function ContactContent() {
 
   return (
     <>
-      <section className="page-header">
+      <section className="page-header" style={{position: 'relative', overflow: 'hidden'}}>
+        <RandomLeafParallax leafCount={11} />
     <div className="container">
       <div className="page-header-inner">
         <p className="section-eyebrow">Connect</p>
@@ -85,7 +87,8 @@ function ContactContent() {
   </section>
 
   {/*  Contact Section  */}
-  <section className="contact-section">
+  <section className="contact-section" style={{position: 'relative', overflow: 'hidden'}}>
+    <RandomLeafParallax leafCount={12} />
     <div className="container">
       <div className="contact-grid">
 
@@ -128,7 +131,7 @@ function ContactContent() {
               </div>
               <div>
                 <h3>Location</h3>
-                <p>Mumbai, Maharashtra, India</p>
+                <p>Ahmedabad, Gujarat, India</p>
               </div>
             </div>
           </div>
@@ -208,7 +211,8 @@ function ContactContent() {
   </section>
 
   {/*  FAQ  */}
-  <section className="faq-section">
+  <section className="faq-section" style={{position: 'relative', overflow: 'hidden'}}>
+    <RandomLeafParallax leafCount={11} />
     <div className="container">
       <p className="section-eyebrow">Answers</p>
       <h2 className="section-title">Frequently <em>Asked</em></h2>

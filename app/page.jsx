@@ -8,8 +8,10 @@ export const metadata = {
   }
 };
 
+
 import Link from 'next/link';
 import NewsletterForm from '@/components/NewsletterForm';
+import RandomLeafParallax from '@/components/RandomLeafParallax';
 
 export default function Home() {
   return (
@@ -38,27 +40,8 @@ export default function Home() {
           })
         }}
       />
-      <section className="hero">
-        <div className="hero-botanical" aria-hidden="true"></div>
-
-        <div className="hero-accent" aria-hidden="true">
-          <svg viewBox="0 0 500 600" fill="none" width="100%">
-            <path d="M250 580 Q248 400 252 200" stroke="#4f3e36" strokeWidth="1.5" fill="none" opacity="0.4"/>
-            <path d="M252 320 Q320 280 360 200 Q290 240 252 320Z" fill="#4f3e36" opacity="0.18"/>
-            <path d="M252 320 Q180 275 140 190 Q215 235 252 320Z" fill="#4f3e36" opacity="0.15"/>
-            <path d="M252 420 Q330 375 370 280 Q295 330 252 420Z" fill="#8c7365" opacity="0.2"/>
-            <path d="M252 420 Q170 370 130 275 Q210 325 252 420Z" fill="#8c7365" opacity="0.16"/>
-            <circle cx="252" cy="170" r="28" fill="#E8836E" opacity="0.25"/>
-            <circle cx="252" cy="170" r="14" fill="#E8836E" opacity="0.35"/>
-            <ellipse cx="252" cy="142" rx="8" ry="14" fill="#F4B8A8" opacity="0.4"/>
-            <ellipse cx="252" cy="198" rx="8" ry="14" fill="#F4B8A8" opacity="0.4"/>
-            <ellipse cx="224" cy="170" rx="14" ry="8" fill="#F4B8A8" opacity="0.35"/>
-            <ellipse cx="280" cy="170" rx="14" ry="8" fill="#F4B8A8" opacity="0.35"/>
-            <circle cx="310" cy="260" r="4" fill="#4f3e36" opacity="0.25"/>
-            <circle cx="190" cy="290" r="3" fill="#8c7365" opacity="0.3"/>
-            <circle cx="340" cy="360" r="5" fill="#E8836E" opacity="0.18"/>
-          </svg>
-        </div>
+      <section className="hero" style={{position: 'relative', overflow: 'hidden'}}>
+        <RandomLeafParallax leafCount={14} />
 
         <div className="container">
           <div className="hero-content">
@@ -98,7 +81,8 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="categories" style={{ background: 'var(--white)' }}>
+      <section className="categories" style={{ background: 'var(--white)', position: 'relative', overflow: 'hidden' }}>
+        <RandomLeafParallax leafCount={12} />
         <div className="container">
           <div className="categories-header" style={{ animation: 'fadeInUp 1s ease 0.4s both' }}>
             <p className="section-eyebrow">Beauty · Skin · Cosmetics</p>
@@ -168,7 +152,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="features">
+      <section className="features" style={{position: 'relative', overflow: 'hidden'}}>
+        <RandomLeafParallax leafCount={11} />
         <div className="container">
           <div style={{ animation: 'fadeInUp 1s ease 0.5s both' }}>
             <p className="section-eyebrow">Why Us</p>

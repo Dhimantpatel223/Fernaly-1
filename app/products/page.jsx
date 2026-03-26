@@ -5,6 +5,9 @@ import Link from 'next/link';
 import { useEffect } from 'react';
 
 
+
+import RandomLeafParallax from '@/components/RandomLeafParallax';
+
 export default function Page() {
   useEffect(() => {
     const notifyForm = document.getElementById('notifyForm');
@@ -20,7 +23,8 @@ export default function Page() {
 
   return (
     <>
-      <section className="products-hero">
+      <section className="products-hero" style={{position: 'relative', overflow: 'hidden'}}>
+        <RandomLeafParallax leafCount={13} />
     <div className="container">
       <div className="products-hero-inner">
         <div>
@@ -44,39 +48,12 @@ export default function Page() {
   </section>
 
   {/*  ===== SPOTLIGHT PRODUCT =====  */}
-  <section className="featured-spotlight">
+  <section className="featured-spotlight" style={{position: 'relative', overflow: 'hidden'}}>
+    <RandomLeafParallax leafCount={12} />
     <div className="container">
       <div className="spotlight-grid">
 
-        <div className="spotlight-visual">
-          <svg viewBox="0 0 520 580" fill="none" >
-            <rect width="520" height="580" rx="14" fill="#F2EAD8"/>
-            {/*  Serum bottle  */}
-            <rect x="190" y="140" width="140" height="280" rx="70" fill="#E8836E" opacity="0.5"/>
-            <rect x="210" y="95"  width="100" height="55"  rx="16" fill="#4f3e36" opacity="0.6"/>
-            <rect x="248" y="65"  width="24"  height="36"  rx="6"  fill="#2a1f1a" opacity="0.5"/>
-            <ellipse cx="225" cy="210" rx="18" ry="50" fill="white" opacity="0.2"/>
-            <rect x="205" y="230" width="110" height="110" rx="8" fill="white" opacity="0.25"/>
-            <rect x="220" y="252" width="80" height="4" rx="2" fill="#2a1f1a" opacity="0.4"/>
-            <rect x="228" y="264" width="64" height="3" rx="2" fill="#4f3e36" opacity="0.3"/>
-            <rect x="220" y="276" width="80" height="2" rx="1" fill="#8c7365" opacity="0.35"/>
-            <text x="256" y="314" font-family="Georgia,serif" font-size="22" fill="#2a1f1a" opacity="0.35" text-anchor="middle" font-style={{}}>F</text>
-            {/*  botanicals  */}
-            <path d="M190 250 Q140 220 108 168 Q158 200 190 250Z" fill="#4f3e36" opacity="0.22"/>
-            <path d="M190 315 Q130 292 98 240 Q155 268 190 315Z" fill="#8c7365" opacity="0.2"/>
-            <path d="M330 250 Q378 218 412 168 Q362 198 330 250Z" fill="#4f3e36" opacity="0.2"/>
-            <path d="M330 320 Q385 295 420 244 Q365 272 330 320Z" fill="#8c7365" opacity="0.18"/>
-            <circle cx="136" cy="154" r="16" fill="#F4B8A8" opacity="0.35"/>
-            <circle cx="136" cy="154" r="7"  fill="#E8836E" opacity="0.4"/>
-            <circle cx="384" cy="154" r="14" fill="#F4B8A8" opacity="0.3"/>
-            <circle cx="384" cy="154" r="6"  fill="#E8836E" opacity="0.38"/>
-            <circle cx="118" cy="382" r="5"  fill="#E8836E" opacity="0.2"/>
-            <circle cx="400" cy="402" r="4"  fill="#4f3e36" opacity="0.25"/>
-            <circle cx="158" cy="462" r="3"  fill="#8c7365" opacity="0.3"/>
-            <rect x="160" y="478" width="200" height="28" rx="6" fill="#4f3e36" opacity="0.1"/>
-            <text x="260" y="497" font-family="Georgia,serif" font-size="11" fill="#2a1f1a" opacity="0.45" text-anchor="middle" letter-spacing="3">FERNALY · SERUM · 30ML</text>
-          </svg>
-        </div>
+
 
         <div>
           <div className="product-number">01</div>
@@ -118,7 +95,8 @@ export default function Page() {
   </section>
 
   {/*  ===== COMING SOON GRID =====  */}
-  <section className="coming-soon-section">
+  <section className="coming-soon-section" style={{position: 'relative', overflow: 'hidden'}}>
+    <RandomLeafParallax leafCount={11} />
     <div className="container">
       <p className="section-eyebrow">In the Works</p>
       <h2 className="section-title">More <em>Coming Soon</em></h2>
@@ -207,7 +185,8 @@ export default function Page() {
   </section>
 
   {/*  Notify Strip  */}
-  <section className="notify-strip">
+  <section className="notify-strip" style={{position: 'relative', overflow: 'hidden'}}>
+    <RandomLeafParallax leafCount={11} />
     <div className="container">
       <h3>Be the first to <em>know</em></h3>
       <p>Leave your email and we'll notify you the moment a product launches.</p>

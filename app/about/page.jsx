@@ -10,13 +10,16 @@ export const metadata = {
 
 
 
+
 import Link from 'next/link';
+import RandomLeafParallax from '@/components/RandomLeafParallax';
 
 
 export default function Page() {
   return (
     <>
-      <section className="page-header">
+      <section className="page-header" style={{position: 'relative', overflow: 'hidden'}}>
+        <RandomLeafParallax leafCount={12} />
     <div className="container">
       <div className="page-header-inner">
         <p className="section-eyebrow">Our Story</p>
@@ -27,7 +30,8 @@ export default function Page() {
   </section>
 
   {/*  About Content  */}
-  <section className="about-content">
+  <section className="about-content" style={{position: 'relative', overflow: 'hidden'}}>
+    <RandomLeafParallax leafCount={13} />
     <div className="container">
       <div className="about-grid">
         <div className="about-text">
@@ -38,40 +42,14 @@ export default function Page() {
           <p>From nature's quiet confidence to your skin — we're building something beautiful, together.</p>
           <Link href="products.html" className="btn btn-primary" style={{marginTop: `1.5rem`}}>Explore Collection</Link>
         </div>
-        <div className="about-image">
-          <svg viewBox="0 0 480 520" fill="none" >
-            <rect width="480" height="520" rx="12" fill="#F2EAD8"/>
-            {/*  Large botanical illustration  */}
-            {/*  Stem  */}
-            <path d="M240 500 Q238 370 242 200" stroke="#4f3e36" strokeWidth="2" fill="none" opacity="0.5"/>
-            {/*  Large leaves  */}
-            <path d="M242 310 Q320 265 366 170 Q286 222 242 310Z" fill="#4f3e36" opacity="0.22"/>
-            <path d="M242 310 Q158 260 112 165 Q196 220 242 310Z" fill="#4f3e36" opacity="0.18"/>
-            <path d="M242 390 Q325 342 374 238 Q290 295 242 390Z" fill="#8c7365" opacity="0.25"/>
-            <path d="M242 390 Q158 336 108 234 Q196 290 242 390Z" fill="#8c7365" opacity="0.2"/>
-            {/*  Flower  */}
-            <circle cx="242" cy="160" r="36" fill="#E8836E" opacity="0.28"/>
-            <circle cx="242" cy="160" r="18" fill="#E8836E" opacity="0.4"/>
-            <ellipse cx="242" cy="124" rx="10" ry="18" fill="#F4B8A8" opacity="0.45"/>
-            <ellipse cx="242" cy="196" rx="10" ry="18" fill="#F4B8A8" opacity="0.42"/>
-            <ellipse cx="206" cy="160" rx="18" ry="10" fill="#F4B8A8" opacity="0.4"/>
-            <ellipse cx="278" cy="160" rx="18" ry="10" fill="#F4B8A8" opacity="0.38"/>
-            {/*  Small accent dots  */}
-            <circle cx="310" cy="250" r="5" fill="#4f3e36" opacity="0.3"/>
-            <circle cx="174" cy="278" r="4" fill="#8c7365" opacity="0.35"/>
-            <circle cx="340" cy="360" r="6" fill="#E8836E" opacity="0.22"/>
-            <circle cx="148" cy="360" r="5" fill="#F4B8A8" opacity="0.3"/>
-            {/*  Text-like marks for realism  */}
-            <rect x="80" y="460" width="140" height="2" rx="1" fill="#4f3e36" opacity="0.15"/>
-            <rect x="80" y="470" width="100" height="2" rx="1" fill="#4f3e36" opacity="0.1"/>
-          </svg>
-        </div>
+
       </div>
     </div>
   </section>
 
   {/*  Values  */}
-  <section className="values-section">
+  <section className="values-section" style={{position: 'relative', overflow: 'hidden'}}>
+    <RandomLeafParallax leafCount={11} />
     <div className="container">
       <p className="section-eyebrow">What We Stand For</p>
       <h2 className="section-title">Our <em>Values</em></h2>
@@ -121,7 +99,8 @@ export default function Page() {
   </section>
 
   {/*  Philosophy  */}
-  <section className="team-section" style={{background: `var(--cream-dark)`}}>
+  <section className="team-section" style={{background: `var(--cream-dark)`, position: 'relative', overflow: 'hidden'}}>
+    <RandomLeafParallax leafCount={12} />
     <div className="container">
       <p className="section-eyebrow">Our Promise</p>
       <h2 className="section-title">Built on <em>Belief</em></h2>
