@@ -12,7 +12,7 @@ export const metadata = {
     template: '%s | Fernaly'
   },
   icons: {
-    icon: "/favicon.ico",  // .svg likho
+    icon: "/favicon.ico",  // 
   },
   description: 'Fernaly crafts premium, nature-inspired skincare and beauty products rooted in quiet confidence. Experience botanical rituals designed for skin that speaks softly and glows quietly.',
   keywords: ['skincare', 'premium skincare', 'natural ingredients', 'botanical skincare', 'Fernaly beauty', 'cruelty-free', 'glow cream', 'botanical toner', 'organic beauty'],
